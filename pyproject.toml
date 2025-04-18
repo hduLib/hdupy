@@ -14,6 +14,7 @@ dependencies = [
 requires-python = ">=3.11,<3.13"
 readme = "README.md"
 license = { text = "AGPL3" }
+classifiers = ["Private :: Do Not Upload"]
 
 [build-system]
 requires = ["pdm-backend"]
@@ -46,4 +47,10 @@ dev = [
     "types-lxml>=2025.3.4",
     "pyinstaller>=6.12.0",
     "matplotlib>=3.10.1",
+    "coredumpy>=0.4.3",
+    "numpy>=2.2.4",
 ]
+
+
+[tool.uv]
+package = true
